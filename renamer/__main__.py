@@ -20,7 +20,7 @@ def main():
     Renamer = Client("Renamer_NsBot",
                  bot_token=Config.BOT_TOKEN,
                  api_id=Config.API_ID,
-                 api_hash=c6f36f2887586704871201a0fea2e452,
+                 api_hash=Config.API_HASH,
                  plugins=dict(root="renamer/plugins"),
                  workers=100)
 
