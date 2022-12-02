@@ -5,7 +5,7 @@ logger = logging.getLogger(__name__)
 
 class Config:
     API_ID = int(os.environ.get("API_ID", 15916448))
-    API_HASH = os.environ.get("API_HASH", c6f36f2887586704871201a0fea2e452))
+    API_HASH = os.environ.get("API_HASH", c6f36f2887586704871201a0fea2e452)
     OWNER_ID =  int(os.environ.get("OWNER_ID", "1548388867"))
     AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) if os.environ.get("AUTH_USERS", "") else []
     if OWNER_ID not in AUTH_USERS:
